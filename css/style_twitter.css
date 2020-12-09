@@ -1,0 +1,335 @@
+/* Resetando todos os navegadores com espaços, margens */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  /* Cor de fundo do projeto inteiro */
+  body {
+    background-color: cornflowerblue;
+  }
+  
+  /* Comentario -  É o pai de todo o twitter*/
+  .container-principal {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  /* Comentario -  é o header onde ficará o icones e o texto */
+  .content-main {
+    background-color: rgb(10, 45, 121);
+  
+    /* Alinhamento das tag imagens e texto no centro */
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Comentario - Este cara tem largura total */
+  .feeds {
+    display: flex;
+    width: 920px;
+  }
+  
+  /* Comentario - E aqui está pegando um pouco da largura do .container-pai */
+  .timeline {
+    background-color: rgb(143, 85, 15);
+    width: 620px;
+  }
+  
+  /* Comentario - E aqui está pegando o restante da largura do .container-pai */
+  .news {
+    width: 300px;
+    background-color: cadetblue;
+  }
+  
+  /*-------------------- DENTRO DO CONTENT-MAIN------------ */
+  /* Tamanho de imagem */
+  
+  
+  img {
+    width: 30px;
+  }
+  
+  .content-main span {
+    color: #fff;
+  }
+  
+  .default-size {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 18px;
+  
+    position: relative;
+    left: 14px;
+  
+    color: #fff;
+  }
+  
+  .default-size.btn {
+    position: none;
+    left: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+  }
+  
+  li a {
+    padding: 10px;
+  }
+  
+  .btn-tweetar {
+    background: #47A1F2;
+    border-radius: 25px;
+  
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+    position: relative;
+    top: 10px;
+  
+    cursor: pointer;
+  }
+  
+  
+  /*-------------------- DENTRO DO CONTAINER-PAI------------ */
+  .page-initial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .profile-img {
+    display: flex;
+  }
+  
+  .content-profile-icone ul {
+    display: flex;
+  }
+  
+  div.all-icone {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+  }
+  
+  .img-profile {
+    width: 40px;
+    padding-top: 10px;
+    padding-left: 12px;
+  }
+  
+  .input-profile {
+    width: 200px;
+    height: 40px;
+    padding-left: 12px;
+    padding-top: 10px;
+    background-color: rgb(143, 85, 15);
+    outline: none;
+    border: none;
+  }
+  
+  .input-profile input {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+  }
+  
+  
+  input::placeholder {
+    color: #fff;
+  }
+  
+  .all-icone li {
+    position: relative;
+    padding: 5px;
+  }
+  
+  .all-icone button {
+    background: #47A1F2;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    width: 100px;
+    height: 35px;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  
+  /*-------------------- DENTRO DO NEWS ------------ */
+  .news-title {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+    border-bottom: none;
+  }
+  
+  .news-title span{
+    color: #fff;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 600;
+  
+    position: relative;
+    left: 4px;
+    bottom: 5px;
+  }
+  
+  .card-news {
+    border-radius: 30px;
+    /* border: 1px solid red; */
+    width: 290px;
+    height: 340px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    position: relative;
+    left: 4px;
+    top: 10px;
+  }
+  
+  .news-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .news-info span {
+    color: #ddd;
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: 600;
+  }
+  
+  .news-info img {
+    width: 18px;
+    height: 10px;
+  }
+  
+  .news-context span {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .mostramais span{
+    color: rgb(59, 12, 232);
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .input-search {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 20px;
+    max-width: 280px;
+    padding-top: 10px;
+  }
+  
+  .input-search img {
+    padding: 5px 5px;
+  }
+  
+  .input-search input {
+    width: 238px;
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: cadetblue;
+  }
+  
+  .card-news ul {
+    border: 1px solid;
+    padding: 8px;
+    border-radius: 10px;
+  }
+  
+  .card-news li {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+  }
+  
+  .card-news li:nth-child(1) {
+    border-top: none;
+  }
+  
+  .card-news li:nth-child(6) {
+    border-bottom: none;
+  }
+  
+  /*-------------------- DENTRO SPACE-BACKGROUND ------------ */
+  
+  section.space-background {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* border-bottom: 1px solid rgb(38, 51, 65); */
+  }
+  
+  .space-info  {
+    display: flex;
+  }
+  
+  /* Perfil */
+  .space-right img {
+    height: 2.9rem;
+    padding-right: 15px;
+    padding-left: 5px;
+    width: 40px;
+  }
+  
+  .content-text {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 18px;
+  }
+  
+  .icones {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+  }
+  
+  .icones a img {
+    cursor: pointer;
+    height: 1rem;
+  }
+  
+  .icones a span {
+    color: #fff;
+    opacity: .5;
+    font-family: sans-serif;
+    font-size: 18px;
+  }
+  
+  .content-info a {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .content-info span {
+    color: #ddd;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: 600;
+  }
+  
+  
+  

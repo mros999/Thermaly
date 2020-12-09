@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Therma.ly</title>
+    <link rel="shortcut icon" href="img/Simbolo_Thermaly.png"/>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style_contato.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="home">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+
+            <a class="navbar-brand" href="index.html"><img src="/img/Simbolo_Thermaly.png"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="nossaHistoria.html">Nossa Historia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produto.html">Produto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="duvida.html">Dúvidas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Entrar</a></li>
+                </ul>
+              </div>
+            
+        </nav>
+
+        <section id="parceiros">
+
+                <div class="contaneir">
+                    <div class="row">
+
+                        <div class="col-lg-4">
+                            <form class="formulario" method="post"> 
+                                <p><strong>Envie uma mensagem preenchendo o formulário</strong></p>
+    
+                                <div class="field">
+                                    <label for="nome"><strong>Seu Nome</strong></label>
+                                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                                </div>
+                                
+                                <div class="field">
+                                    <label for="telefone"><strong>Seu Telefone</strong></label>
+                                    <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone" maxlength="11">
+                                </div>
+                         
+                                <div class="field">
+                                    <label for="email"><strong>Seu E-Mail</strong></label>
+                                    <input type="email" id="email" name="email" placeholder="Digite seu E-Mail" required>
+                                </div>        
+                                <div class="field">
+                                    <label for="mensagem"><strong>Sua mensagem</strong></label>
+                                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem" required></textarea>
+                                </div>
+                         
+                                <input type="submit" name="acao" value="Enviar">
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+
+        </section>
+    </div>
+</body>
+</html>
